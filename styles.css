@@ -1,0 +1,321 @@
+
+
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 10px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 2;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+.money-plus {
+  color: #2ecc71;
+}
+
+.money-minus {
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  height: 200px;           
+  overflow-y: scroll;          
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow:0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+ * {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   background: linear-gradient(135deg, #ffecd2, #fcb69f);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   min-height: 100vh;
+   margin: 0;
+   font-family: 'Quicksand', sans-serif;
+   padding: 40px 20px;
+   color: #2c3e50;
+ }
+ 
+ .container {
+   background: #ffffff;
+   padding: 25px 35px;
+   border-radius: 16px;
+   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   max-width: 420px;
+   border-top: 5px solid #ff6b81;
+   transition: transform 0.3s ease;
+ }
+ 
+ .container:hover {
+   transform: scale(1.02);
+ }
+ 
+ h1, h2 {
+   color: #ff6b81;
+   margin: 0 0 10px;
+ }
+ 
+ h3 {
+   border-bottom: 2px solid #ffeaa7;
+   padding-bottom: 10px;
+   margin: 40px 0 10px;
+   color: #d63031;
+ }
+ 
+ h4 {
+   margin: 0;
+   text-transform: uppercase;
+   font-size: 14px;
+   color: #636e72;
+ }
+ 
+ .inc-exp-container {
+   background-color: #fff0f6;
+   border-radius: 10px;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0;
+   border: 2px solid #fab1a0;
+ }
+ 
+ .inc-exp-container > div {
+   flex: 1;
+   text-align: center;
+ }
+ 
+ .inc-exp-container > div:first-of-type {
+   border-right: 2px dashed #fab1a0;
+ }
+ 
+ .money-plus {
+   color: #00b894;
+   font-weight: bold;
+   font-size: 18px;
+ }
+ 
+ .money-minus {
+   color: #d63031;
+   font-weight: bold;
+   font-size: 18px;
+ }
+ 
+ label {
+   display: block;
+   margin: 10px 0 5px;
+   font-weight: 600;
+   color: #2d3436;
+ }
+ 
+ input[type="text"],
+ input[type="number"] {
+   border: 2px solid #ffeaa7;
+   border-radius: 8px;
+   padding: 10px;
+   font-size: 15px;
+   width: 100%;
+   margin-bottom: 10px;
+   background-color: #fffaf0;
+ }
+ 
+ .btn {
+   cursor: pointer;
+   background: linear-gradient(135deg, #fd79a8, #e84393);
+   color: #fff;
+   border: none;
+   font-size: 16px;
+   padding: 12px;
+   border-radius: 8px;
+   width: 100%;
+   font-weight: bold;
+   letter-spacing: 0.5px;
+   transition: background 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .btn:hover {
+   background: linear-gradient(135deg, #e84393, #d63031);
+   transform: scale(1.02);
+ }
+ 
+ .list {
+   list-style-type: none;
+   padding: 0;
+   margin-bottom: 40px;
+   max-height: 200px;
+   overflow-y: auto;
+ }
+ 
+ .list li {
+   background-color: #fff5f8;
+   border-left: 6px solid;
+   border-radius: 10px;
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+   color: #2c3e50;
+   display: flex;
+   justify-content: space-between;
+   padding: 12px;
+   margin: 10px 0;
+   position: relative;
+   font-weight: 500;
+ }
+ 
+ .list li.plus {
+   border-color: #00b894;
+ }
+ 
+ .list li.minus {
+   border-color: #d63031;
+ }
+ 
+ .delete-btn {
+   cursor: pointer;
+   background-color: #d63031;
+   border: none;
+   color: #fff;
+   font-size: 14px;
+   padding: 5px 10px;
+   border-radius: 6px;
+   position: absolute;
+   top: 50%;
+   left: -10px;
+   transform: translate(-100%, -50%);
+   opacity: 0;
+   transition: opacity 0.3s ease;
+ }
+ 
+ .list li:hover .delete-btn {
+   opacity: 1;
+ }
+ 
